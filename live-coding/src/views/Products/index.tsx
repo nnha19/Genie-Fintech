@@ -134,6 +134,7 @@ const PageProducts: FC<InterfaceProductsProps> = ({
         dispatch({ type: "UPDATE_CART", value: cartItems })
     }, [products, dispatch])
 
+
     return (
         <LayoutCenter>
             <Container>

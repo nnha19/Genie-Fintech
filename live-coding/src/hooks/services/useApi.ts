@@ -2,6 +2,7 @@ import { useAxios } from "@hooks/adapters/useAxios"
 
 export const useApiBackend = <InitialState>(initialState: InitialState) => {
     const baseURL = `${import.meta.env.VITE_API_1}`
+    console.log(baseURL)
 
     const { Request, setAuth, ...rest } = useAxios<InitialState>({
         baseURL,
